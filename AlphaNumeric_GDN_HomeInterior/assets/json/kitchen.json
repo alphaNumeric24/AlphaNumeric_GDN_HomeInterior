@@ -1,0 +1,34 @@
+
+[
+    {
+        "image": "../assets/image/cabinet1.jpg",
+        "name": "CABINETS",
+        "description": "This kitchen cabinet features a sleek, modern design, crafted from high-quality maple wood with a rich, warm finish."
+    },
+    {
+        "image": "../assets/image/counter1.avif",
+        "name": "COUNTER",
+        "description": "This kitchen counter showcases a stunning quartz surface, known for its durability and low maintenance."
+    },
+    {
+        "image": "../assets/image/sink1.jpg",
+        "name": "SINKS",
+        "description": "This farmhouse-style kitchen sink features a spacious, deep basin crafted from durable stainless steel."
+    },
+    {
+        "image": "../assets/image/island1.avif",
+        "name": "ISLAND",
+        "description": "a flat surface that can be used for food preparation"
+    },
+    {
+        "image": "../assets/image/chair1.jpg",
+        "name": "CHAIRS",
+        "description": "often padded or upholstered for comfort "
+    },
+    {
+        "image": "../assets/image/kitchen4.jpg",
+        "name": "Accecories",
+        "description": "for accurate ingredients measurements"
+    }
+    
+]

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>HomeInterior -- TechWIZ5</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="background-image: url(./assets/image/3.jpg);">
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+   
+    <header>
+        <nav class="nav1">
+            <ul>
+                <h1>HOME STYLER</h1>
+            </ul>
+            <ul>
+                <li><a href="./htmlpages/index.html" class="navhidden">Home</a></li>
+                <li><a href="./htmlpages/about.html" class="navhidden">About</a></li>
+                <li><a href="./htmlpages/contactus.html" class="navhidden">Contact</a></li>
+                <li><a href="./htmlpages/feedback.html" class="navhidden">Feedback</a></li>
+                <li><a href="./htmlpages/product.html" class="navhidden">Product</a></li>
+                <li id="userSection" style="display: none;">
+                    <span id="usernameDisplay"></span>
+                    <a href="#" id="logoutButton">Logout</a>
+                </li>
+                <li id="loginSection">
+                    <a href="./htmlpages/loginsignup.html" class="navhidden">Login / SignUP</a>
+                </li>
+
+
+            </ul>
+            <ul class="navhidden">
+                <div id="searchResults"></div>
+                <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search">
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="signupName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Handle login and signup form submission
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Handle login logic here
+            alert('Login successful!');
+            // Close modal
+            var modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+            modal.hide();
+        });
+
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Handle signup logic here
+            alert('Signup successful!');
+            // Close modal
+            var modal = bootstrap.Modal.getInstance(document.getElementById('signupModal'));
+            modal.hide();
+        });
+    </script>
+           
+          </header>
+          <h1 class="SLOGAN"><span>CREATING</span> THE ART OF STYLISH LIVING</h1>
+
+<a href="./htmlpages/gallery.html">
+<button class="button-36" id="btn" button >GALLERY</button>
+</a>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <img src="./assets/image/sofa 4.jpg" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">SOFAS</h5>
+                    <p class="product-text text-dark">$220.00</p>
+                    <p class="product-text text-dark">SOFAS ARE RELAXATION SERVING AS A CENTRAL PEICE OF FURNITURE IN LIVING SPACE</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <img src="./assets/image/4.jpg" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">KITCHEN</h5>
+                    <p class="product-text text-dark">$150.00</p>
+                    <p class="product-text text-dark">A kitchen is a vital space in a home, designed primarily for the preparation and cooking of food. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <img src="./assets/image/chair 2.jpg" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">CHAIRS</h5>
+                    <p class="product-text text-dark">$300.00</p>
+                    <p class="product-text text-dark">SERVING AS A CENTRAL PEICE OF FURNITURE IN LIVING
+                        SPACES  </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <img src="./assets/image/table 5.jpg" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">TABLE</h5>
+                    <p class="product-text text-dark">$320.00</p>
+                    <p class="product-text text-dark">Tables can also vary in style, from modern and minimalist to rustic and ornate, </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+            <div class="card">
+                <img src="./assets/image/counter1.avif" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">COUNTER</h5>
+                    <p class="product-text text-dark">$240.00</p>
+                    <p class="product-text text-dark">A counter is a flat, horizontal surface typically used in kitchens, bars, or retail spaces for various purposes,</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 ">
+            <div class="card">
+                <img src="./assets/image/toilet 3.jpg" width="100%" height="250px" alt="">
+                <div class="container">
+                    <h5 class="product text-dark">TOILET</h5>
+                    <p class="product-text text-dark">$125.00</p>
+                    <p class="product-text text-dark">TOILET can vary widely in style, from minimalist and modern to cozy and traditional, </p>
+                </div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+
+
+         
+
+
+
+          <!-- about -->
+          <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container">
+              <div class="responsive-container-block leftSide">
+                <p class="text-blk heading">
+                  Meet Our Creative Team
+                </p>
+                <p class="text-blk subHeading">
+                    Welcome to Home Styler, where we transform your living spaces into beautiful reflections of your personality. Our dedicated team of interior designers specializes in personalized solutions, from modern minimalism to classic elegance. We believe that great design is both functional and inspiring. Committed to sustainability, we source quality materials to enhance your home. Join us on a journey to create a space that truly feels like home. Let’s bring your vision to life!
+                </p>
+              </div>
+              <div class="responsive-container-block rightSide">
+                <img class="number1img" src="./assets/image/about1.jpg">
+                <img class="number2img" src="./assets/image/about2.jpg">
+                <img class="number3img" src="./assets/image/about 3.jpg">
+                <img class="number7img" src="./assets/image/about5.jpg">
+                <img class="number6img" src="./assets/image/about6.jpg">
+              </div>
+            </div>
+          </div>
+          <!-- about -->
+             </div>
+           
+       
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        
+        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/search.js"></script>
+        <script src="./assets/js/login.js"></script>
+    </body>
+   
+    <footer>
+           
+       
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+<footer class="footer">
+    <div class="container">
+    <div class="row" style="justify-content: center;">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">Feed Back</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">shipping</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+     
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </footer>
+
+
+
+
+    <script>
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+    
+            const email = document.getElementById('loginEmail').value;
+            const name = email.split('@')[0]; // Use part of email as name for display
+    
+            // Handle login logic here (you may want to verify against stored users)
+            localStorage.setItem('loggedInUser', name); // Store the username in localStorage
+    
+            // Update UI
+            document.getElementById('usernameDisplay').textContent = `Welcome, ${name}!`;
+            document.getElementById('userSection').style.display = 'flex';
+            document.getElementById('loginSection').style.display = 'none';
+            document.getElementById('signupSection').style.display = 'none';
+    
+            // Close modal
+            var modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+            modal.hide();
+        });
+    
+        // Handle signup form submission
+        document.getElementById('signupForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // Handle signup logic here
+            alert('Signup successful!');
+            
+            // Optionally, you could automatically log in the user after signup
+            var modal = bootstrap.Modal.getInstance(document.getElementById('signupModal'));
+            modal.hide();
+        });
+    
+        // On page load, check if user is logged in
+        window.onload = function() {
+            const loggedInUser = localStorage.getItem('loggedInUser');
+            if (loggedInUser) {
+                document.getElementById('usernameDisplay').textContent = `Welcome, ${loggedInUser}!`;
+                document.getElementById('userSection').style.display = 'flex';
+                document.getElementById('loginSection').style.display = 'none';
+                document.getElementById('signupSection').style.display = 'none';
+            }
+        };
+    
+        // Handle logout
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            localStorage.removeItem('loggedInUser'); // Remove user from localStorage
+            document.getElementById('userSection').style.display = 'none';
+            document.getElementById('loginSection').style.display = 'block';
+            document.getElementById('signupSection').style.display = 'block';
+        });
+    </script>
+    </body>
+   
+</html>

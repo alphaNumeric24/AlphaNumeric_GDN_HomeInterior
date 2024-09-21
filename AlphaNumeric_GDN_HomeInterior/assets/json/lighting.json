@@ -1,0 +1,25 @@
+
+[
+    {
+        "image": "../assets/image/walllight2.avif",
+        "name": "WALL LIGHTS",
+        "description": "Mounted on walls, these fixtures can provide ambient or accent lighting. They come in various styles, "
+    },
+    {
+        "image": "../assets/image/outlight2.avif",
+        "name": "CELLING LIGHTS",
+        "description": "Often found in bedrooms or living rooms, these provide focused task lighting "
+    },
+    {
+        "image": "../assets/image/floorlamp2.avif",
+        "name": "FLOOR LAMP",
+        "description": "  Available in various styles, including modern, industrial, traditional, and vintage, to complement different decor themes"
+    },
+    {
+        "image": "../assets/image/walllight3.avif",
+        "name": "TABLE LAMP",
+        "description": "A table lamp is a versatile lighting fixture designed to sit on a flat surface, such as a desk, nightstand, "
+    }
+    
+    
+]

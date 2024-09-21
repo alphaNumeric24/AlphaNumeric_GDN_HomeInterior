@@ -1,0 +1,34 @@
+
+[
+    {
+        "image": "../assets/image/carpat3.avif",
+        "name": "CARPET",
+        "description": "A carpet is a textile floor covering that adds warmth, comfort, and style to a space.  "
+    },
+    {
+        "image": "../assets/image/curtains2.avif",
+        "name": "CURTAINS",
+        "description": "Curtains are fabric panels hung over windows to provide privacy, control light, and enhance the decor of a room."
+    },
+    {
+        "image": "../assets/image/art2.avif",
+        "name": "WALL ART",
+        "description": " Wall art encompasses a wide range of decorative pieces designed to enhance and personalize interior spaces."
+    },
+    {
+        "image": "../assets/image/cushion1.avif",
+        "name": "CUSHION",
+        "description": "A cushion is a soft, padded accessory designed to provide comfort and support, often used on chairs, sofas, or beds."
+    },
+    {
+        "image": "../assets/image/pot1.avif",
+        "name": "PLANT POTS",
+        "description": "Classic, porous clay that allows for good air circulation and moisture control. They often have a warm, earthy color."
+    },
+    {
+        "image": "../assets/image/rug2.avif",
+        "name": "RUGS",
+        "description": "Large enough to define spaces within a room, these rugs can anchor furniture arrangements and add warmth."
+    }
+    
+]

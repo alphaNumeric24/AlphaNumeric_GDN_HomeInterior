@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>HomeInterior -- TechWIZ5</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="nav1">
+            <ul>
+                <h1>HOME STYLER</h1>
+            </ul>
+            <ul>
+                <li><a href="../index.html" class="navhidden">Home</a></li>
+                <li><a href="../htmlpages/about.html" class="navhidden">About</a></li>
+                <li><a href="../htmlpages/contactus.html" class="navhidden">Contact</a></li>
+                <li><a href="../htmlpages/feedback.html" class="navhidden">Feedback</a></li>
+                <li><a href="../htmlpages/product.html" class="navhidden">Product</a></li>
+                <li><a href="../htmlpages/loginsignup.html" class="navhidden">SignUP / Login</a></li>
+                <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                <li><i class="fa fa-times" aria-hidden="true"></i></li>
+            </ul>
+            <ul class="navhidden">
+                <div id="searchResults"></div>
+                <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search">
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                
+            </ul>
+        </nav>
+
+        <nav class="nav2">
+            <ul>
+                <li><a href="#" class="navhidden">Home</a></li>
+                <li><a href="#" class="navhidden">About</a></li>
+                <li><a href="#" class="navhidden">Contact</a></li>
+                <li><a href="#" class="navhidden">Product</a></li>
+            </ul>
+            <ul class="navhidden">
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><i class="fa fa-search" aria-hidden="true"></i></li>
+                <input type="text" placeholder="Search">
+            </ul>
+        </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Products Section -->
+    <div class="wrapper">
+        <h1>FURNITURE PRODUCTS</h1>
+        
+        <div class="row" id="product-container"></div>
+
+        <script>
+            // Fetch the product data from products.json
+            fetch('../assets/json/furniture.json')
+                .then(response => response.json())
+                .then(data => {
+                    const productContainer = document.getElementById('product-container');
+                   
+                    // Loop through the products and create HTML elements to display them
+                    data.forEach(product => {
+                        const colDiv = document.createElement('div');
+                        colDiv.classList.add('col-md-4');
+                        colDiv.setAttribute('ontouchstart', "this.classList.toggle('hover');");
+    
+                        const containerDiv = document.createElement('div');
+                        containerDiv.classList.add('container');
+    
+                        const frontDiv = document.createElement('div');
+                        frontDiv.classList.add('front');
+                        frontDiv.style.backgroundImage = `url(${product.image})`;
+
+    
+                        const innerFrontDiv = document.createElement('div');
+                        innerFrontDiv.classList.add('inner');
+                        innerFrontDiv.innerHTML = `<span>${product.name}</span>`;
+    
+                        const backDiv = document.createElement('div');
+                        backDiv.classList.add('back');
+    
+                        const innerBackDiv = document.createElement('div');
+                        innerBackDiv.classList.add('inner');
+                        innerBackDiv.innerHTML = `<p>${product.description}</p>`;
+
+
+                          // Create "Add to Wishlist" button
+                const wishlistButton = document.createElement('button');
+                wishlistButton.classList.add('btn', 'btn-primary', 'mt-2');
+                wishlistButton.innerText = 'Add to Wishlist';
+                wishlistButton.onclick = function() {
+                    alert(`${product.name} has been added to your wishlist!`);
+                }
+    
+                        // Append the inner elements
+                        frontDiv.appendChild(innerFrontDiv);
+                        backDiv.appendChild(innerBackDiv);
+                        containerDiv.appendChild(frontDiv);
+                        containerDiv.appendChild(backDiv);
+                        colDiv.appendChild(containerDiv);
+                        colDiv.appendChild(wishlistButton);
+    
+                        // Append the product div to the container
+                        productContainer.appendChild(colDiv);
+                    });
+                })
+                .catch(error => console.error('Error fetching the product data:', error));
+        </script>
+    
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        ></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">feedback</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap and Custom Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/feeback.js"></script>
+
+</body>
+</html>

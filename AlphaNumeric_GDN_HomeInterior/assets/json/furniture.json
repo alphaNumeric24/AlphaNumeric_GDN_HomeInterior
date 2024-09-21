@@ -1,0 +1,33 @@
+[
+    {
+        "image": "../assets/image/sofa1.jpg",
+        "name": "SOFAS",
+        "description": "This sleek, minimalist sofa features clean lines and a contemporary design, making it a perfect addition to any modern living space."
+    },
+    {
+        "image": "../assets/image/chair1.jpg",
+        "name": "CHAIRS",
+        "description": "The accent chair is a statement piece that adds personality to any room"
+    },
+    {
+        "image": "../assets/image/table1.jpg",
+        "name": "TABLE",
+        "description": "The  table is the centerpiece of family gatherings and meals. Typically rectangular or round, it offers ample space for dining and entertaining."
+    },
+    {
+        "image": "../assets/image/bed1.jpg",
+        "name": "BED",
+        "description": "A modern design with a low profile and a sturdy base, often featuring a slatted or solid foundation for mattress support. No box spring is needed."
+    },
+    {
+        "image": "../assets/image/cabinet2.jpg",
+        "name": "STORAGE",
+        "description": "TOpen or closed shelves that can hold books, decor, or storage bins. They come in various materials like wood, metal, or plastic."
+    },
+    {
+        "image": "../assets/image/outlight1.avif",
+        "name": "LIGHTING",
+        "description": "The main source of light in a room, providing overall illumination. Common examples include ceiling fixtures, chandeliers, and recessed lighting."
+    }
+    
+]

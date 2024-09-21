@@ -1,0 +1,30 @@
+
+[
+    {
+        "image": "../assets/image/bathtubs3.jpg",
+        "name": "BATHTUBS",
+        "description": "Designed to fit into a three-wall enclosure, these are the most common type. They typically include a shower option and are space-efficient. "
+    },
+    {
+        "image": "../assets/image/cabinet2.jpg",
+        "name": "CABINET",
+        "description": "Elevate your kitchen with the Modern Classic Kitchen Cabinet, designed to blend style and functionality seamlessly."
+    },
+    {
+        "image": "../assets/image/toilet2.jpg",
+        "name": "WALL ART",
+        "description": "  Equipped with advanced technology, these can feature heated seats, self-cleaning functions, and integrated bidets, providing luxury and convenience."
+    },
+    {
+        "image": "../assets/image/sink2.jpg",
+        "name": "CUSHION",
+        "description": "Also known as top-mount sinks, these are installed by placing them into a pre-cut hole in the countertop. The rim sits on top, making them easy to install.."
+    },
+    {
+        "image": "../assets/image/mirror2.avif",
+        "name": "PLANT POTS",
+        "description": "A mirror is a reflective surface, typically made of glass coated with a thin layer of metal, like silver or aluminum"
+    }
+    
+    
+]
